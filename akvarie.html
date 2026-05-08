@@ -3,51 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Road Animations</title>
-     <link rel="stylesheet" href="css/akvarie.css">
+    <title>Akvarie</title>
+
+    <link rel="stylesheet" href="css/akvarie.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fredoka:wght@300..700&family=Julius+Sans+One&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
 
-<div class="aquarium">
-  <div class="ray" style="left:12%; animation-delay:0s;"></div>
-  <div class="ray" style="left:30%; animation-delay:-1.5s; width:55px;"></div>
-  <div class="ray" style="left:52%; animation-delay:-0.8s; width:70px;"></div>
-  <div class="ray" style="left:74%; animation-delay:-2.2s;"></div>
-  <div class="ray" style="left:90%; animation-delay:-1s; width:50px;"></div>
-  <div id="bg-layer"></div>
-  <div id="bubbles-layer"></div>
-  <div id="plants-layer"></div>
-  <div class="sand"></div>
-  <div class="vignette"></div>
-  <div id="fg-layer"></div>
-</div>
+    <!-- BAGGRUND -->
+    <div class="aquarium">
 
- <section id="akvarie">
-    <div class="fish">
-        <img src="img/seahorse.gif" alt="seahorse" class="fish1" id="seaHorse">
-        <img src="img/fish-1-gif.gif" alt="purple fish" class="fish2" id="purpleFish">
-        <img src="img/fish-2-gif.gif" alt="clownfish" class="fish3" id="clownFish">
-        <img src="img/fish-4-gif.gif" alt="guld fisk" class="fish4" id="guldFisk">
-        <img src="img/crab-walking.gif" alt="krabbe" class="fish5" id="krabbe">
+        <!-- Solstråler -->
+        <div class="ray" style="left:10%;"></div>
+        <div class="ray" style="left:28%;"></div>
+        <div class="ray" style="left:45%;"></div>
+        <div class="ray" style="left:65%;"></div>
+        <div class="ray" style="left:82%;"></div>
+
+        <!-- Glimt -->
+        <div class="sparkle" style="top:8%; left:12%;"></div>
+        <div class="sparkle" style="top:14%; left:26%;"></div>
+        <div class="sparkle" style="top:10%; left:74%;"></div>
+        <div class="sparkle" style="top:22%; left:86%;"></div>
+        <div class="sparkle" style="top:18%; left:55%;"></div>
+
+        <!-- Bobler -->
+        <div id="bubbles-layer"></div>
+
+        <!-- Sand -->
+        <div class="sand"></div>
+
+        <!-- Mørk kant -->
+        <div class="vignette"></div>
+
     </div>
- </section>
-<div id="faktaBoks">
- <div id="fiskeFakta" class="fiskeFakta"></div>
-</div>
 
-<div id="buttons">
-<a href="startside.html" id="tilbageKnap"><img src="img/home-button.png" alt="home button"></a>
+    <!-- FISK -->
+    <section id="akvarie">
+        <div class="fish">
+            <img src="img/seahorse.gif" alt="seahorse" class="fish1" id="seaHorse">
+            <img src="img/fish-1-gif.gif" alt="purple fish" class="fish2" id="purpleFish">
+            <img src="img/fish-2-gif.gif" alt="clownfish" class="fish3" id="clownFish">
+            <img src="img/fish-4-gif.gif" alt="guld fisk" class="fish4" id="guldFisk">
+            <img src="img/crab-walking.gif" alt="krabbe" class="fish5" id="krabbe">
+        </div>
+    </section>
 
- <h1 id="pushHeader">TRYK PÅ FISKEN OG LÆR OM DEN!</h1>
+    <!-- FAKTABOKS -->
+    <div id="faktaBoks">
+        <div id="fiskeFakta" class="fiskeFakta"></div>
+    </div>
 
-<a href="the-card.html" id="globusKnap"><img src="img/globe-button2.png" alt="globe"></a>
- </div>
+    <!-- KNAPPER -->
+    <div id="buttons">
+        <a href="startside.html" id="tilbageKnap">
+            <img src="img/home-button.png" alt="home button">
+        </a>
 
- <script src="js/aquarium-bg.js"></script>
- <script src="js/fish-swimming.js"></script>
+        <h1 id="pushHeader">TRYK PÅ FISKEN OG LÆR OM DEN!</h1>
+
+        <a href="the-card.html" id="globusKnap">
+            <img src="img/globe-button2.png" alt="globe">
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="js/fish-swimming.js"></script>
+
 </body>
 </html>
